@@ -1,0 +1,55 @@
+.update-user-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.input-field {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.submit-btn {
+  padding: 8px 16px;
+  border: none;
+  background-color: #0077b6;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 70px;
+}
+
+.reset-btn {
+  padding: 8px 16px;
+  border: none;
+  background-color: #d62828;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 50px;
+}
+
+.submit-btn:hover,
+.reset-btn:hover {
+  background-color: #023e8a;
+}
+
+.error-message {
+  color: red;
+}
+.forhamburgermenuinupdate {
+  margin-top: -50px;
+}
+.fortexttaginupdate {
+  margin-top: 150px;
+}

@@ -1,0 +1,44 @@
+.details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  .main-heading {
+    margin-bottom: 20px;
+    margin-top: 160px;
+  }
+  
+  .details-table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .details-table th,
+  .details-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .number-button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #0077b6;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .number-button:hover {
+    background-color: #023e8a;
+  }
+  
+  .details-table th:first-child,
+  .details-table td:first-child {
+    font-weight: bold;
+  }  
+  .forhamburgermenuinall {
+    margin-top: -100px;
+  }

@@ -1,0 +1,45 @@
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.image-heading {
+  margin-bottom: 20px;
+}
+
+.image-label {
+  margin-right: 10px;
+}
+
+.image-input {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.image-button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #0077b6;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.image-button:hover {
+  background-color: #023e8a;
+}
+
+.image {
+  margin-top: 20px;
+  max-width: 100%;
+}
+.forhamburgermenuinview {
+  margin-top: -40px;
+}
+.image-heading {
+  margin-top: 200px;
+}

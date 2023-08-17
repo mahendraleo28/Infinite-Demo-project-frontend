@@ -1,0 +1,37 @@
+.togoelftsienkn {
+    margin-left: 440px;
+}
+.sameclassnaemforinouttags {
+    padding: 0px 80px;
+    text-align: center;
+}
+.submitted-data {
+    margin-left: 450px;
+    margin-top: -400px;
+    width: 400px;
+  /* margin-left: 500px;
+  margin-top: 100px; */
+  transform:
+      perspective(75em)
+      rotateX(0deg);
+    box-shadow:
+      rgba(214, 222, 230, 0.42) 0px 60px 123px -25px,
+      rgba(255, 255, 255, 0.08) 0px 35px 75px -35px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color:
+      rgb(213, 220, 226)
+      rgb(213, 220, 226)
+      rgb(184, 194, 204);
+}
+.sameclassnaemforinouttags1 {
+    padding: 0px 80px;
+    text-align: center;
+}
+.ldsjbgfdkgbjk {
+    margin-left: 9px;
+}
+.buttontosbumittheform {
+    padding: 10px 20px;
+    margin-left: 245px;
+}

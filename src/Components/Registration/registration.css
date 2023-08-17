@@ -1,0 +1,102 @@
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+    .yedookati {
+      width: 500px;
+      margin-left: 400px;
+      margin-top: 30px;
+    transform:
+      perspective(75em)
+      rotateX(0deg);
+    box-shadow:
+      rgba(214, 222, 230, 0.42) 0px 60px 123px -25px,
+      rgba(255, 255, 255, 0.08) 0px 35px 75px -35px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color:
+      rgb(213, 220, 226)
+      rgb(213, 220, 226)
+      rgb(184, 194, 204);
+  }
+  
+  .form-container label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .form-container label span {
+    margin-bottom: 5px;
+  }
+  
+  .form-container-input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .form-container button {
+    /* padding: 10px 20px; */
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 40px;
+  }
+  
+  .form-container button[type="submit"] {
+    background-color: green;
+    /* padding: 10px 20px; */
+  }
+  
+  .form-container button[type="button"] {
+    background-color: #dc3545;
+    padding: 9px 24px;
+  }
+  
+  .form-container .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+  }
+  .login{
+    background-color: rgb(51, 25, 25);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 3px 3px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .forbuttoninregistration {
+    text-align: center;
+  }
+
+  .form-container-input1 {
+    padding: 10px 60px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    margin-left: 10px;
+  }
+  .fornametagindrop {
+    margin-left: 10px;
+  }
+

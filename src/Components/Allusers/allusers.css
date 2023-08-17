@@ -1,0 +1,66 @@
+.user-list {
+  margin-top: 150px;
+  font-size: 16px;
+}
+
+.user-list h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.user-list table {
+  border-collapse: collapse;
+  width: 65%;
+}
+
+.user-list th,
+.user-list td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.user-list th {
+  background-color: #f2f2f2;
+}
+
+
+.user-list .delete-btn {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-list .delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+.update{
+  background-color: #69a84e;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.toalter {
+  margin-left: 400px;
+}
+
+.forhamburder {
+  position: fixed;
+  margin-top: -150px;
+}
+
+.tabledatagive {
+  background-color: #0c0b0b;
+  padding: 5px 10px;
+}
+
+.headerfortittlenames {
+  color: #0c0b0b; 
+}
