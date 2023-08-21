@@ -53,11 +53,11 @@ const handleDelete = async (username) => {
           <td className="tabledatagive">{user.username}</td>
           <td className="tabledatagive">{user.email}</td>
           <td className="tabledatagive">{user.company}</td>
-          <td className="tabledatagive">
+          <td className="tabledatagive1">
             <button
               className="delete-btn"
               onClick={() => handleDelete(user.username)}>
-              Delete
+              Delete User
             </button>
             <Link to = '/update'>
               <button className="update" >Upate User</button>

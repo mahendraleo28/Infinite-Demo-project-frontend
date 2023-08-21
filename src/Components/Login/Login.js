@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  // const [role, setRole] = useState('')
+  const [selectedRole, setSelectedRole] = useState('employee');
   const [message, setMessage] = useState(null);
 
   const navigate = useNavigate();
@@ -19,6 +19,10 @@ function Login() {
     setPassword(event.target.value);
   };
 
+  const handleRoleChange = (event) => {
+    setSelectedRole(event.target.value);
+  };
+  
   const reset =()=>{
     setUsername("")
     setPassword("")
@@ -31,7 +35,7 @@ function Login() {
       const response = await fetch('http://localhost:8081/user', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ username, password })
+        body: JSON.stringify({ username, password, role: selectedRole })
       });
 
       if (response.ok) {
@@ -39,17 +43,12 @@ function Login() {
         console.log('Login successful!', data.role);
         const userrole = data.role;
         console.log(userrole);
-        // setMessage('Login successful!');
         if (userrole === "admin") {
           navigate('/admin');
-          // setMessage("Login successful!");
         } else if (userrole === "officer") {
           navigate('/officer');
-          // setMessage('Login successful!');
         } else 
-        // (userrole === "employee") 
           navigate('/users');
-          // setMessage('Login successful!');
       } else {
         const errorData = await response.json();
         console.log('Login failed:', errorData);
@@ -72,6 +71,14 @@ function Login() {
         Password:
         <input className="password-input" type="password" value={password} onChange={handlePasswordChange} required/>
       </label>
+      {/* <label>
+          User Role:
+          <select value={selectedRole} onChange={handleRoleChange}>
+            <option value="employee">Employee</option>
+            <option value="officer">Officer</option>
+            <option value="admin">Admin</option>
+          </select>
+        </label> */}
       <div className="button-container">
         <button className="login-button" type="submit">Login</button>
         <br/>

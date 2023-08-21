@@ -1,0 +1,36 @@
+.thisisforheadingtag {
+    text-align: center;
+}
+.inputtags {
+    display: flex;
+    padding: 10px 85px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.formforstatusofemployee {
+    margin-left: 510px;
+}
+
+.uploadbuttoninemploy {
+    padding: 5px 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-left: 120px;
+}
+/* .etxtfdsyucvshdfv {
+    text-align: right;
+} */
+.etxtfdsyucvshdfv td,th{
+    text-align: left;
+    border-style: outset;
+}
+.ksdngwuerkgbsdvhdn{
+     
+        margin-left: auto;
+        margin-right: auto;
+      
+}
+.gettingdatafromremian{
+    text-align: center;
+}
