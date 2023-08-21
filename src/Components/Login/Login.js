@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom';
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  // const [role, setRole] = useState('')
   const [message, setMessage] = useState(null);
 
   const navigate = useNavigate();
@@ -35,10 +36,20 @@ function Login() {
 
       if (response.ok) {
         const data = await response.json();
-        console.log('Login successful!', data);
-        setMessage('Login successful!');
-        navigate('/users');
-        alert("Login success");
+        console.log('Login successful!', data.role);
+        const userrole = data.role;
+        console.log(userrole);
+        // setMessage('Login successful!');
+        if (userrole === "admin") {
+          navigate('/admin');
+          // setMessage("Login successful!");
+        } else if (userrole === "officer") {
+          navigate('/officer');
+          // setMessage('Login successful!');
+        } else 
+        // (userrole === "employee") 
+          navigate('/users');
+          // setMessage('Login successful!');
       } else {
         const errorData = await response.json();
         console.log('Login failed:', errorData);

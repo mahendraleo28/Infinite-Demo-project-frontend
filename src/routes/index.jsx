@@ -14,6 +14,9 @@ import Login1 from '../Components/Search/Login1';
 import Hamburger from '../Components/Hamburger/Hamburger';
 import UserForm from '../Components/task1/task';
 import AddressDropdown from '../Components/task1/AddressDropdown';
+import Officer from '../Components/Officer/Officer';
+import Admin from '../Components/Admin/Admin';
+import UploadEmployeeData from '../Components/Employee/employee';
 
 export const AppRoutes = () => {
   return(
@@ -36,6 +39,9 @@ export const AppRoutes = () => {
         <Route path="/hamburger" element={<Hamburger/>}/>
         <Route path="/userform" element={<UserForm/>}/>
         <Route path="/addressdropdown" element={<AddressDropdown/>}/>
+        <Route path="/officer" element={<Officer/>}/>
+        <Route path="/admin" element={<Admin/>}/>
+        <Route path="/uploademployee" element={<UploadEmployeeData/>}/>
       </Routes>
     </div>
   );
