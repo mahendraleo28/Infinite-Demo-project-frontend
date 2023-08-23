@@ -1,6 +1,7 @@
-.thisisforheadingtag {
+/* .thisisforheadingtag {
     text-align: center;
-}
+    
+} */
 .inputtags {
     display: flex;
     padding: 10px 85px;
@@ -24,6 +25,7 @@
 .etxtfdsyucvshdfv td,th{
     text-align: left;
     border-style: outset;
+    /* width: 33.3%; */
 }
 .ksdngwuerkgbsdvhdn{
      

@@ -1,5 +1,6 @@
 import React, { useState , useEffect} from 'react';
 import "./employee.css";
+import Hamburger from "../Hamburger/Hamburger";
 
 
 function UploadEmployeeData() {
@@ -18,6 +19,7 @@ function UploadEmployeeData() {
       if (response.ok) {
         const data = await response.json();
         setEmployees(data);
+        console.log(data)
       } else {
         console.log('Failed to fetch employee data.');
       }
@@ -49,8 +51,11 @@ function UploadEmployeeData() {
 
   return (
     <div>
-      <h1 className='thisisforheadingtag'>Upload Employee Data</h1>
+      <Hamburger/>
+      <br/>
+      <div className='forsomethingtomovedown'>
       <form className='formforstatusofemployee' onSubmit={handleSubmit}>
+      <h1 className='thisisforheadingtag'>Upload Employee Data</h1>
         <label>
           <input className='inputtags' placeholder='Name' type="text" value={name} onChange={(e) => setName(e.target.value)} required />
         </label>
@@ -64,22 +69,29 @@ function UploadEmployeeData() {
       </form>
       <div className='gettingdatafromremian'>
         <h2>Fetched Employee Data</h2>
-        
           <table className='ksdngwuerkgbsdvhdn'>
             <tr className='etxtfdsyucvshdfv'>
               <th>Name</th>
               <th>Phone</th>
               <th>Email</th>
+              <th>Officer Status</th>
+              <th>Officer comment</th>
+              <th>Admin Status</th>
+              <th>Admin comment</th>
             </tr>
           {employees.map((employee) => (
             <tr className='etxtfdsyucvshdfv'>
               <td>{employee.name}</td>
               <td>{employee.phone}</td>
               <td>{employee.email}</td>
+              <td>{employee.status || "pending"}</td>
+              <td>{employee.comment ||"pending"}</td>
+              <td>{employee.admin_status || "pending"}</td>
+              <td>{employee.comment1|| "pending"}</td>
             </tr>
           ))}
           </table>
-        
+          </div>
       </div>
     </div>
   );
