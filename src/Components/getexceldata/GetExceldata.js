@@ -91,7 +91,7 @@ export default function EmployeeList() {
           <input
           className="search-bar-for-filter-the-emp"
             type="text"
-            placeholder="Filter By Name"
+            placeholder="Filter By Name 🔎"
             value={filter}
             onChange={handleFilterChange}
           />
@@ -110,7 +110,14 @@ export default function EmployeeList() {
                   sort-by="name"
                   onClick={() => handleSortChange("name")}
                 >
-                  Name
+                  First Name
+                </th>
+                <th
+                  className="employee-list-header"
+                  sort-by="phone"
+                  onClick={() => handleSortChange("phone")}
+                >
+                  Last Name
                 </th>
                 <th
                   className="employee-list-header"
@@ -119,13 +126,7 @@ export default function EmployeeList() {
                 >
                   Email
                 </th>
-                <th
-                  className="employee-list-header"
-                  sort-by="phone"
-                  onClick={() => handleSortChange("phone")}
-                >
-                  Phone
-                </th>
+                
               </tr>
             </thead>
             <tbody>
