@@ -2,7 +2,8 @@ import "./hamburger.css"
 import { Link } from "react-router-dom"
 export default function Hamburger() {
     return (
-        <div className="hometagforhamburger">
+        <div>
+            <header  className="navigationbarbutton"></header>
             <nav role="navigation">
                 <div id="menuToggle">
                     <input type="checkbox" />
@@ -22,15 +23,18 @@ export default function Hamburger() {
                         <Link to="/search"><h3>search</h3></Link>
                         <Link to="/userform"><h3>UserForm</h3></Link>
                         <Link to="/uploademployee"><h3>Status</h3></Link>
-                        {/* <Link to="/addressdropdown"><h3>Address Drop down</h3></Link> */}
+                        <Link to="/Filter-details"><h3>Filtered Data</h3></Link>
+                        {/* <Link to="/addressdropdown"><h3>Addressdropwon</h3></Link> */}
                     </ul>
-                    <div className="logoutdivtag" >
-                        <Link to='/'>
-                            <button className="logout">Logout</button>
-                        </Link>
-                    </div>
+                    
                 </div>
+               
             </nav>
+            <div className="sdkjfsdkufgdf">
+                <Link to='/'>
+                        <button className="logout">Logout</button>
+                    </Link>
+                    </div>
         </div>
     )
 }

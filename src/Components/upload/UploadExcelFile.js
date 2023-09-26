@@ -39,7 +39,7 @@ export default function UploadExcelFile() {
         <Hamburger/>
         </div>
     <form className="form-container" onSubmit={handleSubmit}>
-      <div>
+      <div className="div-tag-to-move-the-excel-file">
         <label className="textdataforexcelfile" htmlFor="file">Select an Excel file:</label>
         <input type="file" id="file" onChange={handleFileChange} />
       </div>

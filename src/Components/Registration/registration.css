@@ -1,15 +1,17 @@
-.form-container {
+.form-container-container {
     max-width: 500px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* background-color: rgb(15, 14, 65); */
   }
     .yedookati {
-      width: 500px;
-      margin-left: 400px;
+      width: 419px;
+      margin-left: 470px;
       margin-top: 30px;
+      background-color: rgb(15, 14, 65);
     transform:
       perspective(75em)
       rotateX(0deg);
@@ -24,14 +26,18 @@
       rgb(184, 194, 204);
   }
   
-  .form-container label {
+  .form-container-container label {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: -27px;
+    margin-top: 22px;
+    padding-right: 20px;
+    color: white;
   }
   
-  .form-container label span {
+  .form-container-container label span {
     margin-bottom: 5px;
+    color: white;
   }
   
   .form-container-input {
@@ -44,7 +50,7 @@
     max-width: 300px;
   }
   
-  .form-container button {
+  .form-container-container button {
     /* padding: 10px 20px; */
     border-radius: 5px;
     border: none;
@@ -55,25 +61,27 @@
     margin-right: 40px;
   }
   
-  .form-container button[type="submit"] {
+  .form-container-container button[type="submit"] {
     background-color: green;
-    /* padding: 10px 20px; */
+    padding: 10px 20px;
   }
   
-  .form-container button[type="button"] {
+  .form-container-container button[type="button"] {
     background-color: #dc3545;
-    padding: 9px 24px;
+    padding: 10px 26px;
   }
   
-  .form-container .button-container {
+  .form-container-container .button-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
     padding: 10px 20px;
+    margin-left: 43px;
+
   }
   .login{
-    background-color: rgb(51, 25, 25);
+    background-color: rgb(142 119 143);
     color: #fff;
     border-radius: 5px;
     border: none;
@@ -84,6 +92,8 @@
   }
   .forbuttoninregistration {
     text-align: center;
+    margin-left: 40px;
+    color: white;
   }
 
   .form-container-input1 {
@@ -94,9 +104,13 @@
     font-size: 16px;
     width: 100%;
     max-width: 300px;
-    margin-left: 10px;
+    margin-left: -1px;
   }
   .fornametagindrop {
-    margin-left: 10px;
+
+      margin-left: 10px;
+      margin-top: 30px !important;
+      margin-bottom: 16px !important;
   }
+  
 

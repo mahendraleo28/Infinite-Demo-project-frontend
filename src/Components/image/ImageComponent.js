@@ -26,10 +26,10 @@ const handleGetImageClick = () => {
   };
   return (
     <div>
-     <div className="forhamburgermenuinview">
+        <div className="forhamburgermenuinview">
         <Hamburger/>
         </div>
-    <div className="image-container">
+        <div className="image-container">
   <h1 className="image-heading">Get Image By Name</h1>
   <label>
     <span className="image-label">Image Name:</span>

@@ -63,7 +63,7 @@ function Registration() {
 
   return (
     <div className="yedookati">
-    <form className="form-container" onSubmit={handleSubmit}>
+    <form className="form-container-container" onSubmit={handleSubmit}>
   <label>
     <span>Username:</span>
     <input className="form-container-input" type="text" value={username} onChange={handleUsernameChange} required />

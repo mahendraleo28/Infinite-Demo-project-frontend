@@ -69,8 +69,8 @@ function UploadEmployeeData() {
       </form>
       <div className='gettingdatafromremian'>
         <h2>Fetched Employee Data</h2>
-          <table className='ksdngwuerkgbsdvhdn'>
-            <tr className='etxtfdsyucvshdfv'>
+          <table className='table-tag-for-employee-file-in-th'>
+            <tr>
               <th>Name</th>
               <th>Phone</th>
               <th>Email</th>
@@ -91,6 +91,7 @@ function UploadEmployeeData() {
             </tr>
           ))}
           </table>
+          <h2></h2>
           </div>
       </div>
     </div>

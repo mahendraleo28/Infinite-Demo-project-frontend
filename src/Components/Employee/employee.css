@@ -17,14 +17,21 @@
     padding: 5px 10px;
     margin-top: 20px;
     border-radius: 20px;
-    margin-left: 120px;
+    margin-left: 126px;
+    background-color: rgb(15, 14, 65)
+    ;
+    color: white;
+}
+.uploadbuttoninemploy:hover {
+    background-color: 
+    #747980;
 }
 /* .etxtfdsyucvshdfv {
     text-align: right;
 } */
 .etxtfdsyucvshdfv td,th{
-    text-align: left;
-    border-style: outset;
+    text-align: center;
+    /* border-style: outset; */
     /* width: 33.3%; */
 }
 .ksdngwuerkgbsdvhdn{
@@ -35,4 +42,28 @@
 }
 .gettingdatafromremian{
     text-align: center;
+}
+.gettingdatafromremian h2{
+ font-size: 23px;
+ color: rgb(15, 14, 65)
+ ;
+}
+.thisisforheadingtag {
+    margin-top: 83px;
+    font-size: 23px;
+    margin-left: 48px;
+    color: rgb(15, 14, 65);
+}
+.table-tag-for-employee-file-in-th th,td {
+    color: black;
+    /* border-style: solid; */
+    border-color: black;
+}
+.table-tag-for-employee-file-in-th th {
+    background-color: rgb(15, 14, 65);
+    color: aliceblue;
+    padding: 10px;
+}
+.table-tag-for-employee-file-in-th {
+    margin-left: 120px;
 }

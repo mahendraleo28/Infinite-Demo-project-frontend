@@ -53,15 +53,24 @@
   .form-button {
     padding: 8px 16px;
     border: none;
-    background-color: #0077b6;
+    background-color: rgb(15, 14, 65)
+    ;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-left: 70px;
   }
+  .form-button:hover{
+    background-color: #747980;
+  }
   
   .form-button-reset {
-    background-color: #dc3545;
+    background-color: 
+    #747980;
+  }
+  .form-button-reset:hover{
+    background-color: 
+    rgb(15, 14, 65);
   }
   
   .form-error-message {
@@ -72,4 +81,7 @@
   .subtitlefrotext {
     margin-top: 150px;
     margin-left: 80px;
+    color:rgb(15, 14, 65)
+    ;
+    font-size: 23px;
   }

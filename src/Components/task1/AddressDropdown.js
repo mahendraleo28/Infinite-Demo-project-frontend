@@ -109,7 +109,7 @@ const AddressDropdown = () => {
       <select className='advfhsdvfsd' value={selectedCountry} onChange={handleCountryChange}>
         <option value="">Select Country</option>
         {countries.map((country) => (
-          <option key={country.id} value={country.id}>
+          <option className="option-tag-for-select" key={country.id} value={country.id}>
             {country.name}
           </option>
         ))}
@@ -118,7 +118,7 @@ const AddressDropdown = () => {
       <select className='advfhsdvfsd' value={selectedState} onChange={handleStateChange} disabled={!selectedCountry}>
         <option value="">Select State</option>
         {states.map((state) => (
-          <option key={state.id} value={state.id}>
+          <option className="option-tag-for-select" key={state.id} value={state.id}>
             {state.name}
           </option>
         ))}
@@ -127,7 +127,7 @@ const AddressDropdown = () => {
       <select className='advfhsdvfsd' value={selectedDistrict} onChange={handleDistrictChange} disabled={!selectedState}>
         <option value="">Select District</option>
         {districts.map((district) => (
-          <option key={district.id} value={district.id}>
+          <option className="option-tag-for-select" key={district.id} value={district.id}>
             {district.name}
           </option>
         ))}
@@ -136,7 +136,7 @@ const AddressDropdown = () => {
       <select className='advfhsdvfsd' value={selectedMandal} onChange={handleMandalChange} disabled={!selectedDistrict}>
         <option value="">Select Mandal</option>
         {mandals.map((mandal) => (
-          <option key={mandal.id} value={mandal.id}>
+          <option className="option-tag-for-select" key={mandal.id} value={mandal.id}>
             {mandal.name}
           </option>
         ))}
@@ -145,20 +145,11 @@ const AddressDropdown = () => {
       <select className='advfhsdvfsd' value={selectedVillage} onChange={(e) => setSelectedVillage(e.target.value)} disabled={!selectedMandal}>
         <option value="">Select Village</option>
         {villages.map((village) => (
-          <option key={village.id} value={village.id}>
+          <option className="option-tag-for-select" key={village.id} value={village.id}>
             {village.name}
           </option>
         ))}
       </select>
-
-      {/* Display selected values */}
-      {/* <div>
-        Selected Country: {countries.find(country => country.id === selectedCountry)?.name || 'None'}
-        Selected State: {states.find(state => state.id === selectedState)?.name || 'None'}
-        Selected District: {districts.find(district => district.id === selectedDistrict)?.name || 'None'}
-        Selected Mandal: {mandals.find(mandal => mandal.id === selectedMandal)?.name || 'None'}
-        Selected Village: {villages.find(village => village.id === selectedVillage)?.name || 'None'}
-      </div> */}
     </div>
   );
 };

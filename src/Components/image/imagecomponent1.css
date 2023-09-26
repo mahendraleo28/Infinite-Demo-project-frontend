@@ -1,11 +1,11 @@
-.image-container {
+.image-container1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
-}
+  margin-top: 39px;
+} 
 
-.image-heading {
+ .image-heading {
   margin-bottom: 20px;
 }
 
@@ -14,23 +14,25 @@
 }
 
 .image-input {
-  padding: 5px;
+  padding: 8px;
   margin-right: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
 .image-button {
+  margin-left: 30px;
   padding: 8px 16px;
   border: none;
-  background-color: #0077b6;
+  background-color: rgb(15, 14, 65);
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .image-button:hover {
-  background-color: #023e8a;
+  background-color: 
+  #747980;
 }
 
 .image {
@@ -42,4 +44,9 @@
 }
 .image-heading {
   margin-top: 200px;
+  color: rgb(15, 14, 65);
+  font-size: 24px;
+}
+.image-container-for-both {
+  margin-top: -20px;
 }

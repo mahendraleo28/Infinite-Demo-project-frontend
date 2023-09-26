@@ -7,30 +7,39 @@
   text-align: center;
   margin-top: 300px;
 }
+tr.employee-list-row {
+  color:rgb(15, 14, 65)
+  ;
+}
 
 .employee-list-table {
   border-collapse: collapse;
   width: 100%;
-  margin-top: 100px;
-}
-
+  /* margin-top: 100px; */
+} 
 .employee-list-header {
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
   padding: 10px;
   text-align: center;
 }
 
-.employee-list-row:nth-child(even) {
+/* .employee-list-row:nth-child(even) {
   background-color: #f2f2f2;
-}
+} */
 
 .employee-list-cell {
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
   padding: 10px;
   text-align: center;
 }
 
 .forhamburgermenuforgetexcel {
-  margin-top: -277px;
+  margin-top: -300px;
 }
-
+.employee-list-title1 {
+margin-top: 147px;
+text-align: center;
+color: rgb(15, 14, 65)
+;
+font-size: 23px;
+}

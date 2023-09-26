@@ -2,11 +2,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 39px;
   }
 
   .main-heading {
     margin-bottom: 20px;
+    color: rgb(15, 14, 65);
+    font-size: 21px;
+    padding-top: 17px;
   }
 
   .image-form {
@@ -14,23 +17,27 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+    padding-top: 35px;
   }
 
   .image-input {
     margin-bottom: 20px;
+    color: black;
   }
 
   .image-upload-button {
     padding: 8px 16px;
     border: none;
-    background-color: #0077b6;
+    background-color: rgb(15, 14, 65)
+    ;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
 
   .image-upload-button:hover {
-    background-color: #023e8a;
+    background-color: 
+    #747980;
   }
 
   .forhamburgermenuinupload {

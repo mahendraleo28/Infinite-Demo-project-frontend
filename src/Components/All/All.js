@@ -65,9 +65,7 @@ export default function All() {
   };
   return (
     <div>
-      <div className="forhamburgermenuinall">
         <Hamburger />
-      </div>
       <div className="details-container">
         <h1 className="main-heading">Dept's Emp's and student's details</h1>
         <table className="details-table">
@@ -100,7 +98,7 @@ export default function All() {
         </table>
         {showDepartments && (
           <div>
-            <table className="details-table">
+            <table className="details-table1">
               <thead>
                 <tr>
                   <th>ID</th>
@@ -121,7 +119,7 @@ export default function All() {
 
         {showEmployees && (
           <div>
-            <table className="details-table">
+            <table className="details-table1">
               <thead>
                 <tr>
                   <th>ID</th>
@@ -149,7 +147,7 @@ export default function All() {
         )}
         {showStudents && (
           <div>
-            <table className="details-table">
+            <table className="details-table1">
               <thead>
                 <tr>
                   <th>ID</th>

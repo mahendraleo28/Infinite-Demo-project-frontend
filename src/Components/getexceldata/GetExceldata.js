@@ -21,22 +21,24 @@ export default function EmployeeList() {
       <h1 className="skjdbfhsbfkhsdbdkhbs"></h1>
       <div className="employee-list-container">
         <h2 className="employee-list-title">EXCEL DATA</h2>
+        <h2 className="employee-list-title1">EXCEL DATA</h2>
         <table className="employee-list-table">
           <thead>
             <tr>
               <th className="employee-list-header">ID</th>
-              <th className="employee-list-header">Name</th>
+              <th className="employee-list-header">First Name</th>
+              <th className="employee-list-header">Last Name</th>
               <th className="employee-list-header">Email</th>
-              <th className="employee-list-header">Phone</th>
+              
             </tr>
           </thead>
           <tbody>
             {employees.map((employee) => (
               <tr key={employee.id} className="employee-list-row">
-                <td className="employee-list-cell">{employee.id}</td>
-                <td className="employee-list-cell">{employee.name}</td>
-                <td className="employee-list-cell">{employee.email}</td>
-                <td className="employee-list-cell">{employee.phone}</td>
+                <td>{employee.id}</td>
+                <td>{employee.name}</td>
+                <td>{employee.phone}</td>
+                <td>{employee.email}</td>
               </tr>
             ))}
           </tbody>

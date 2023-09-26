@@ -1,69 +1,74 @@
-.user-list {
-  margin-top: 150px;
-  font-size: 16px;
-}
 
-.user-list h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
+.tabledatagive1 {
+  display: flex;
+} 
 
-.user-list table {
-  border-collapse: collapse;
-  width: 65%;
-}
-
-.user-list th,
-.user-list td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-}
-
-.user-list th {
-  background-color: #f2f2f2;
-}
-
-
-.user-list .delete-btn {
-  background-color: #f44336;
-  color: #fff;
+.delete-btn-in-users {
+  background-color: 
+  #747980;
+  color: white;
   border: none;
   padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.user-list .delete-btn:hover {
-  background-color: #d32f2f;
-}
-
-.update{
-  background-color: #69a84e;
-  color: #fff;
+.update-btn-in-users {
+  background-color: rgb(15, 14, 65)
+  ;
+  color: white;
   border: none;
   padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
   margin-left: 10px;
 }
-.toalter {
-  margin-left: 400px;
+.update-btn-in-users:hover{
+  background-color: #747980;
+  color: white;
+}
+.delete-btn-in-users:hover{
+  background-color: rgb(15, 14, 65);
+  color: white;
 }
 
-.forhamburder {
-  position: fixed;
-  margin-top: -150px;
+.header-for-userlist-text {
+  margin-top: 70px;
+    color: rgb(15, 14, 65);
+    padding-top: 55px;
+    padding-bottom: 20px;
 }
 
-.tabledatagive {
-  background-color: #0c0b0b;
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-for-tittle-names-users {
+  text-align: center;
   padding: 5px 10px;
 }
 
-.headerfortittlenames {
-  color: #0c0b0b; 
+.header-for-tittle-names-users th,td {
+  border: 2px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  padding: 5px 10px;
+  text-align: center;
 }
-.tabledatagive1 {
-  display: flex;
+.header-for-tittle-names-users-table {
+  border-collapse: collapse;
+  width: 65%;
+  background-color: rgb(15, 14, 65);
+  color: white;
+}
+.table-data-give {
+  background-color: white;
+    color: rgb(15, 14, 65);
+    font-size: 15px;
+  padding: 5px 10px;
+}
+.header-for-tittle-names-users-table th{
+  text-align: center;
+  padding: 14px;
 }

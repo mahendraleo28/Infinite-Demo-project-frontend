@@ -4,7 +4,7 @@ import Hamburger from "../Hamburger/Hamburger";
 
 export default function Home() { 
     return(
-        <div>
+        <div className="main-home">
             <Hamburger/>
             <div className='navbarinhome'>
                 <h3 className='text'>Welcome! successfully LoggedIn!</h3>

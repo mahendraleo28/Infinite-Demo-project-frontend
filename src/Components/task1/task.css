@@ -1,16 +1,25 @@
 .togoelftsienkn {
-    margin-left: 440px;
+    margin-left: 493px;
+    /* margin-top: -50px; */
 }
 .sameclassnaemforinouttags {
-    padding: 0px 80px;
-    text-align: center;
+    padding: 6px 80px;
+    text-align: left;
+}
+h6.wmidh {
+    color: rgb(15, 14, 65)
+    ;
+    font-size: 15px;
+}
+.names-submit-data h3{
+    color: rgb(15, 14, 65);
+}
+.names-submit-data {
+    padding-left: 20px;
 }
 .submitted-data {
-    margin-left: 450px;
-    margin-top: -400px;
     width: 400px;
-  /* margin-left: 500px;
-  margin-top: 100px; */
+    margin-left: -39px;
   transform:
       perspective(75em)
       rotateX(0deg);
@@ -25,13 +34,31 @@
       rgb(184, 194, 204);
 }
 .sameclassnaemforinouttags1 {
-    padding: 0px 80px;
+    padding: 6px 80px;
     text-align: center;
+    width: 24.4vw;
 }
 .ldsjbgfdkgbjk {
-    margin-left: 9px;
+    margin-left: -102px;
 }
 .buttontosbumittheform {
     padding: 10px 20px;
-    margin-left: 245px;
+    margin-left: 130px;
+    background-color: rgb(15, 14, 65)
+    ;
+    color: white;
+}
+.buttontosbumittheform:hover{
+    background-color: 
+    #747980;
+}
+.textinhead {
+    margin-top: 95px;
+    color: rgb(15, 14, 65);
+    font-size: 23px;
+    margin-left: 41px;
+}
+
+.sameclassnaemforinouttags1 option{
+    text-align: left;
 }

@@ -1,5 +1,6 @@
 .navbarinhome{
   width: 100%;
+  position: fixed;
   /* background-color: black; */
   color: white;
   padding: 2rem;
@@ -8,10 +9,13 @@
 }
 .text {
   margin-top: 200px;
+  color: black ;
 }
-
+body{
+  background: white !important;
+}
 .text:hover{
-  color: red;
+  color: #747980;
 }
 
 .home{
@@ -31,13 +35,13 @@
   box-shadow: 0 14px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 10.19);
 }
 .logout{
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: rgb(15, 14, 65);
   padding: 20px;
   margin-top: 20%;
   margin-left: 45%;
 }
-.logout:hover{
+/* .logout:hover{
   background-color: red;
   color: antiquewhite;
-}
+} */

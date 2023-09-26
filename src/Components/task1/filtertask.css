@@ -1,0 +1,93 @@
+.header-for-emp-data {
+    text-align: center;
+    padding-top: 14px;
+    font-size: 23px;
+    color: rgb(15, 14, 65);
+    padding-bottom: 15px;
+    margin-left: 88px;
+}
+.input-tag-to-upload-excel {
+    margin-left: 590px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid rgb(15, 14, 65);
+    padding: 6px 8px;
+}
+.button-to-submit-excel {
+    margin-top: 29px;
+    margin-left: 680px;
+    padding: 9px 20px;
+    border-radius: 14px;
+    border-style: none;
+    background-color: rgb(15, 14, 65);
+    color: white;
+    
+}
+.gwild {
+    margin-left:373px;
+}
+h6.matter {
+    color:rgb(15, 14, 65)
+    ;
+    font-size: 13px;
+    margin-left: 276px
+}
+.gwild h2{
+    /* marg in-left: 239px; */
+    color: rgb(15, 14, 65);
+    font-size: 23px;
+    /* margin-left: 145px; */
+}
+.employee-filter {
+    margin-left: 100px;
+}
+.employee-filter h2{
+    /* margin-left: 208px; */
+    color: rgb(15, 14, 65);
+    font-size: 23px;
+    margin-left: 275px
+}
+.button-to-submit-excel:hover {
+    background-color: 
+    #747980;
+    color: white;
+    
+}
+.div-tag-for-texts {
+    margin-left: 130px;
+    color: rgb(15, 14, 65);
+    font-size: 12px;
+    text-align: center;
+}
+.div-tag-for-texts h3 {
+    margin-left: -44px;
+}
+.table-in-filtertask-allemp td {
+    color: black;
+    border-color: black;
+}
+.table-in-filtertask-filteremploy td{
+    color: black;
+    border-color: black
+}
+.div-for-two-tables {
+    margin-top: 58px;
+}
+.table-in-filtertask-allemp th{
+    padding: 10px;
+}
+.table-in-filtertask-filteremploy th {
+    padding: 10px;
+}
+.warning-messages {
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
+.error-alert {
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
+.table-in-filtertask-filteremploy {
+    margin-left: 274px;
+}
