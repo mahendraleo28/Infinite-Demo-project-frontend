@@ -10,7 +10,6 @@ function Filtertask() {
   const [error, setError] = useState(null);
   const [warnings, setWarnings] = useState([]);   
 
-
   const handleFileChange = (event) => {
     setSelectedFile(event.target.files[0]);
     setError(null);
@@ -61,7 +60,6 @@ function Filtertask() {
         .then((response) => {
           if (response.ok) {
             alert('File upload successful');
-            // Handle success, e.g., update UI
           } else {
             return response.text(); // Extract the error message
           }
@@ -72,7 +70,7 @@ function Filtertask() {
           }
         })
         .catch((error) => {
-          setError('Error uploading file. Please try again.'); // Set a generic error message
+          setError('Error uploading file. Please try again.'); 
         })
         .finally(() => {
           fetch('http://localhost:8081/api/excelemploy/warnings')
@@ -130,6 +128,7 @@ function Filtertask() {
               <tr>
                 <th>Name</th>
                 <th>Ceocid</th>
+                <th>Date-of-Birth</th>
                 <th>Age</th>
                 <th>Mail</th>
                 <th>Eligibility Status</th>
@@ -140,6 +139,7 @@ function Filtertask() {
                 <tr key={employee.id}>
                   <td>{employee.firstName} {employee.lastName}</td>
                   <td>{employee.ceoCid}</td>
+                  <td>{new Date(employee.dateOfBirth).toLocaleDateString()}</td>
                   <td>{employee.age} years old</td>
                   <td>{employee.mail}</td>
                   <td>{employee.eligibilityStatus}</td>
@@ -157,9 +157,11 @@ function Filtertask() {
               <tr>
                 <th>Name</th>
                 <th>Ceocid</th>
+                <th>Date-of-birth</th>
                 <th>Age</th>
                 <th>Mail</th>
                 <th>Eligibility Status</th>
+                
               </tr>
             </thead>
             <tbody>
@@ -167,9 +169,11 @@ function Filtertask() {
                 <tr key={employee.id}>
                   <td>{employee.firstName} {employee.lastName}</td>
                   <td>{employee.ceoCid}</td>
+                  <td>{new Date(employee.dateOfBirth).toLocaleDateString()}</td>
                   <td>{employee.age} years old</td>
                   <td>{employee.mail}</td>
                   <td>{employee.eligibilityStatus}</td>
+                  
                 </tr>
               ))}
             </tbody>

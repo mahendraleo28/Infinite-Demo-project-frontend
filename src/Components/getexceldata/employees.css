@@ -43,3 +43,8 @@ color: rgb(15, 14, 65)
 ;
 font-size: 23px;
 }
+.search-bar-for-filter-the-emp {
+  margin-left: 87px;
+  padding: 5px 13px;
+  text-align: center;
+}
