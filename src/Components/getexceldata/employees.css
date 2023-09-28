@@ -18,9 +18,12 @@ tr.employee-list-row {
   /* margin-top: 100px; */
 } 
 .employee-list-header {
-  border: 1px solid rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
   padding: 10px;
   text-align: center;
+  border-color: rgb(15, 14, 65);
+  border-style: solid;
+
 }
 
 /* .employee-list-row:nth-child(even) {
@@ -44,9 +47,19 @@ color: rgb(15, 14, 65)
 font-size: 23px;
 }
 .search-bar-for-filter-the-emp {
-  margin-left: 79px;
+  /* margin-left: 79px; */
   padding: 5px 6px;
   text-align: center;
   border-style: double;
   border-radius: 20px;
+}
+.span-tag-in-exceldata {
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.button-for-sorting-bal {
+  background-color: rgb(15, 14, 65);
+  border-style: none;
+  color: aliceblue;
 }

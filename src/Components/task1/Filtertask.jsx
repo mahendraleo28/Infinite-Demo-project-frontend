@@ -8,20 +8,17 @@ function Filtertask() {
   const [filteredEmployees, setFilteredEmployees] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [warnings, setWarnings] = useState([]);   
-
-  const handleFileChange = (event) => {
-    setSelectedFile(event.target.files[0]);
-    setError(null);
-  };
+  const [warnings, setWarnings] = useState([]);
+  const [isUploading, setIsUploading] = useState(false);
 
   useEffect(() => {
     fetchAllEmployees();
     fetchFilteredEmployees();
   }, []);
 
+
   const fetchAllEmployees = () => {
-    setLoading(true);
+    setLoading(true); // Set loading to true before fetching
     fetch('http://localhost:8081/api/excelemploy/list')
       .then((response) => response.json())
       .then((data) => {
@@ -35,7 +32,7 @@ function Filtertask() {
   };
 
   const fetchFilteredEmployees = () => {
-    setLoading(true);
+    setLoading(true); // Set loading to true before fetching
     fetch('http://localhost:8081/api/excelemploy/filtered-employees')
       .then((response) => response.json())
       .then((data) => {
@@ -48,9 +45,10 @@ function Filtertask() {
       });
   };
 
-  
+
   const handleFileUpload = () => {
     if (selectedFile) {
+      setIsUploading(true); // Start uploading
       const formData = new FormData();
       formData.append('file', selectedFile);
       fetch('http://localhost:8081/api/excelemploy/upload', {
@@ -58,8 +56,20 @@ function Filtertask() {
         body: formData,
       })
         .then((response) => {
+          setIsUploading(false); // Finished uploading
           if (response.ok) {
             alert('File upload successful');
+            setSelectedFile(null); // Reset the selectedFile state to null
+
+            // Reset the file input element
+            const fileInput = document.getElementById('fileInput');
+            if (fileInput) {
+              fileInput.value = ''; // Clear the input value
+            }
+
+            // Fetch employee data again to update the tables
+            fetchAllEmployees();
+            fetchFilteredEmployees();
           } else {
             return response.text(); // Extract the error message
           }
@@ -70,7 +80,7 @@ function Filtertask() {
           }
         })
         .catch((error) => {
-          setError('Error uploading file. Please try again.'); 
+          setError('Error uploading file. Please try again.');
         })
         .finally(() => {
           fetch('http://localhost:8081/api/excelemploy/warnings')
@@ -84,6 +94,7 @@ function Filtertask() {
     }
   };
 
+
   return (
     <div>
       <Hamburger />
@@ -92,37 +103,47 @@ function Filtertask() {
       <br />
       <h1 className='header-for-emp-data'>Employee Data</h1>
       <input
+        id="fileInput" 
         className='input-tag-to-upload-excel'
         type='file'
         accept='.xlsx'
         onChange={(event) => setSelectedFile(event.target.files[0])}
       />
       <br />
-      <button className='button-to-submit-excel' onClick={handleFileUpload}>
-        Submit
+      <button
+        className='button-to-submit-excel'
+        onClick={handleFileUpload}
+        disabled={isUploading} // Disable the button during upload
+      >
+        {isUploading ? 'Uploading...' : 'Submit'}
       </button>
-      <br/>
-      <br/>
-      {error && <div className="error-alert">{error}</div>}
-      {warnings.length > 0 && (
-        <div className='warning-messages'>
-          <ul>
-            {warnings.map((warning, index) => (
-              <ul key={index}>{warning}</ul>
-            ))}
-          </ul>
-        </div>
+      <br />
+      <br />
+      {loading ? (
+        <p>Loading...</p>
+      ) : (
+        <>
+          {error && <div className="error-alert">{error}</div>}
+          {warnings.length > 0 && (
+            <div className='warning-messages'>
+              <ul>
+                {warnings.map((warning, index) => (
+                  <ul key={index}>{warning}</ul>
+                ))}
+              </ul>
+            </div>
+          )}
+        </>
       )}
       <div className='div-tag-for-texts'>
         <h3>Excel Must Include</h3>
-        
-        <span>*The format of the excel sheet is FirstName,LastName,CoeCid,Date-of-birth,Mail</span>
-        <br/>
+        <span>*The format of the excel sheet is FirstName,LastName,CeoCid,Date-of-birth,Mail</span>
+        <br />
       </div>
       <div className='div-for-two-tables'>
-      <div className='gwild'>
-        <h2>All Employees</h2>
-        {loading && <p>Loading...</p>}
+        <div className='gwild'>
+          <h2>All Employees</h2>
+          {loading && <p>Loading...</p>}
           <table className='table-in-filtertask-allemp'>
             <thead>
               <tr>
@@ -147,11 +168,11 @@ function Filtertask() {
               ))}
             </tbody>
           </table>
-      </div>
-      <br/>
-      <div className='employee-filter'>
-        <h2>Filtered Employees</h2>
-        {loading && <p>Loading...</p>}
+        </div>
+        <br />
+        <div className='employee-filter'>
+          <h2>Filtered Employees</h2>
+          {loading && <p>Loading...</p>}
           <table className='table-in-filtertask-filteremploy'>
             <thead>
               <tr>
@@ -161,7 +182,6 @@ function Filtertask() {
                 <th>Age</th>
                 <th>Mail</th>
                 <th>Eligibility Status</th>
-                
               </tr>
             </thead>
             <tbody>
@@ -173,13 +193,12 @@ function Filtertask() {
                   <td>{employee.age} years old</td>
                   <td>{employee.mail}</td>
                   <td>{employee.eligibilityStatus}</td>
-                  
                 </tr>
               ))}
             </tbody>
           </table>
-        <h6 className='matter'>*Filtered Employees are eligible to take the internal courses</h6>
-      </div>
+          <h6 className='matter'>*Filtered Employees are eligible to take the internal courses</h6>
+        </div>
       </div>
     </div>
   );

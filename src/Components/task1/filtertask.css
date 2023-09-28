@@ -82,7 +82,8 @@ h6.matter {
 }
 .warning-messages {
     color: rgb(255, 0, 0);
-    text-align: center;
+    text-align: left;
+    margin-left: 445px
 }
 .error-alert {
     color: rgb(255, 0, 0);

@@ -22,7 +22,7 @@ export default function Hamburger() {
                         <Link to="/get-excel"><h3>get excel data</h3></Link>
                         <Link to="/search"><h3>search</h3></Link>
                         <Link to="/userform"><h3>UserForm</h3></Link>
-                        <Link to="/uploademployee"><h3>Status</h3></Link>
+                        {/* <Link to="/uploademployee"><h3>Status</h3></Link> */}
                         <Link to="/Filter-details"><h3>Filtered Data</h3></Link>
                         {/* <Link to="/addressdropdown"><h3>Addressdropwon</h3></Link> */}
                     </ul>

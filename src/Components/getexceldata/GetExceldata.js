@@ -103,28 +103,28 @@ export default function EmployeeList() {
                   sort-by="id"
                   onClick={() => handleSortChange("id")}
                 >
-                  ID
+                  ID <button className="button-for-sorting-bal">⬆⬇</button>
                 </th>
                 <th
                   className="employee-list-header"
                   sort-by="name"
                   onClick={() => handleSortChange("name")}
                 >
-                  First Name
+                  First Name <button className="button-for-sorting-bal">⬆⬇</button>
                 </th>
                 <th
                   className="employee-list-header"
                   sort-by="phone"
                   onClick={() => handleSortChange("phone")}
                 >
-                  Last Name
+                  Last Name <button className="button-for-sorting-bal">⬆⬇</button>
                 </th>
                 <th
                   className="employee-list-header"
                   sort-by="email"
                   onClick={() => handleSortChange("email")}
                 >
-                  Email
+                  Email <button className="button-for-sorting-bal">⬆⬇</button>
                 </th>
                 
               </tr>
@@ -153,12 +153,12 @@ export default function EmployeeList() {
             >
               Previous
             </button>
-            <span>
-              {currentPage} of {totalPages}
+              <span className="span-tag-in-exceldata">
+               {currentPage} of {totalPages}
             </span>
             <button
               onClick={() => handlePageChange(currentPage + 1)}
-              disabled={currentPage === totalPages}
+              disabled= {currentPage === totalPages}
             >
               Next
             </button>
