@@ -126,7 +126,6 @@ export default function EmployeeList() {
                 >
                   Email <button className="button-for-sorting-bal">⬆⬇</button>
                 </th>
-                
               </tr>
             </thead>
             <tbody>
