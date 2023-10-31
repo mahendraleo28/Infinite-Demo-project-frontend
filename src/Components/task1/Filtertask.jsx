@@ -141,11 +141,17 @@ function Filtertask() {
               setWarnings(data);
             });
         });
+        setIsModalOpen(false);
     } else {
       // Open the modal if no file is selected
       setIsModalOpen(true);
     }
   };
+
+  const closeUploadModal = () => {
+    setIsModalOpen(false);
+  };
+
 
 
   const handleRecipientEmailChange = (e) => {
@@ -153,10 +159,23 @@ function Filtertask() {
   }
 
   const modalStyles = {
+    overlay: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: 'rgba(0, 0, 0, 0.75)', // Semi-transparent background
+      zIndex: 1000, // Adjust this value as needed
+    },
     content: {
-      width: '300px',
-      margin: 'auto',
-      height: '250px',
+      position: 'relative',
+      top: '0',
+      left: '0',
+      right: '0',
+      bottom: '0',
+      border: 'none',
+      padding: '0',
+      backgroundColor: 'transparent',
+      color: 'white' // No background color
     },
   };
 
@@ -262,14 +281,25 @@ function Filtertask() {
       <button onClick={handleFileUpload}>Upload File</button>
 
       {/* Define the modal */}
-      <Modal 
+      {/* <Modal 
         isOpen={isModalOpen}
         style={modalStyles}
         onRequestClose={() => setIsModalOpen(false)}
         contentLabel="No File Selected Modal"
       >
         <h2 className='this-is-for-h2tag-for-visble'>Please select an Excel file before submitting.</h2>
-        <button className='this-is-for-close-button' onClick={() => setIsModalOpen(false)}>Close</button>
+        {/* <button className='this-is-for-close-button' onClick={() => setIsModalOpen(false)}>Close</button> */}
+        {/* <button className='this-is-for-close-button' onClick={closeUploadModal}>Close</button> */}
+      {/* </Modal> */}
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={closeUploadModal}
+        shouldCloseOnOverlayClick={false} // Prevent closing when clicking outside the modal
+        style={modalStyles}
+        contentLabel="No File Selected Modal"
+      >
+        <h2 className='this-is-for-h2tag-for-visble'>Please select an Excel file before submitting.</h2>
+        <button className='this-is-for-close-button' onClick={closeUploadModal}>Close</button>
       </Modal>
     </div>
         <div className='div-for-two-tables'>
