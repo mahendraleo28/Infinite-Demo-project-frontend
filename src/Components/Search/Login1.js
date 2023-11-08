@@ -12,9 +12,11 @@ function Login1() {
   }
 
   const handleUsernameChange = (event) => {
-    setUsername(event.target.value);
+    const inputUsername = event.target.value;
+    // Remove the characters @, #, $, and %
+    const validUsername = inputUsername.replace(/[@$#%]/g, "");
+    setUsername(validUsername);
   };
-
   const handleSubmit = (event) => {
     event.preventDefault();
     fetch("http://localhost:8081/login?username=" + username, {

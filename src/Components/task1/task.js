@@ -25,7 +25,7 @@ const UserForm = (props) => {
     const [selectedMandal, setSelectedMandal] = useState('');
     const [selectedVillage, setSelectedVillage] = useState('');
 
-    const [selectedCountryName, setSelectedCountryName] = useState('');
+    // const [selectedCountryName, setSelectedCountryName] = useState('');
 
     useEffect(() => {
         fetchCountries();

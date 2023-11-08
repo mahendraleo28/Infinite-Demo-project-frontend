@@ -174,8 +174,7 @@ function Filtertask() {
       bottom: '0',
       border: 'none',
       padding: '0',
-      backgroundColor: 'transparent',
-      color: 'white' // No background color
+      backgroundColor: 'transparent', // No background color
     },
   };
 
@@ -279,18 +278,6 @@ function Filtertask() {
         </div>
         <div>
       <button onClick={handleFileUpload}>Upload File</button>
-
-      {/* Define the modal */}
-      {/* <Modal 
-        isOpen={isModalOpen}
-        style={modalStyles}
-        onRequestClose={() => setIsModalOpen(false)}
-        contentLabel="No File Selected Modal"
-      >
-        <h2 className='this-is-for-h2tag-for-visble'>Please select an Excel file before submitting.</h2>
-        {/* <button className='this-is-for-close-button' onClick={() => setIsModalOpen(false)}>Close</button> */}
-        {/* <button className='this-is-for-close-button' onClick={closeUploadModal}>Close</button> */}
-      {/* </Modal> */}
       <Modal
         isOpen={isModalOpen}
         onRequestClose={closeUploadModal}

@@ -24,6 +24,7 @@ export default function Hamburger() {
                         <Link to="/userform"><h3>UserForm</h3></Link>
                         {/* <Link to="/uploademployee"><h3>Status</h3></Link> */}
                         <Link to="/Filter-details"><h3>Filtered Data</h3></Link>
+                        <Link to="/persons"><h3>Person Details</h3></Link>
                         {/* <Link to="/addressdropdown"><h3>Addressdropwon</h3></Link> */}
                     </ul>
                     
