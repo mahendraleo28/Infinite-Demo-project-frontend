@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
+import Hamburger from "../Hamburger/Hamburger";
+import "./map.css";
 
 const MapContainer = (props) => {
   const [city, setCity] = useState('');
@@ -56,7 +58,15 @@ const MapContainer = (props) => {
 
   return (
     <div>
-      <input type="text" placeholder="Enter city" onChange={handleInputChange} value={city} />
+      <Hamburger/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <input className='input-for-maps-tag' type="text" placeholder="Enter city" onChange={handleInputChange} value={city} />
+      <br/>
+      <br/>
       <Map
         google={props.google}
         zoom={10}
