@@ -19,6 +19,7 @@ import Admin from '../Components/Admin/Admin';
 import UploadEmployeeData from '../Components/Employee/employee';
 import Filtertask from '../Components/task1/Filtertask';
 import Person from '../Components/Person/Person';
+import Maps from '../Components/maps/Maps';
 
 
 export const AppRoutes = () => {
@@ -47,6 +48,7 @@ export const AppRoutes = () => {
         <Route path="/uploademployee" element={<UploadEmployeeData/>}/>
         <Route path="/Filter-details" element={<Filtertask/>}/>
         <Route path="/persons" element={<Person/>}/>
+        <Route path="/map" element={<Maps/>}/>
       </Routes>
     </div>
   );

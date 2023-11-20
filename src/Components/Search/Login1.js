@@ -6,7 +6,6 @@ function Login1() {
   const [username, setUsername] = useState("");
   const [message, setMessage] = useState("");
 
-
   const reset=()=>{
     setUsername("")
   }
