@@ -7,27 +7,33 @@
 }
 
 .active-tab {
-    background-color: rgb(15, 14, 65); 
+    background-color: #0f0e41; 
     color: #fff;
+    margin-right: -10px;
+    transition: background 1s ease;
   }
-.tab-buttons button {
-    margin-top: 10px;
-    padding: 10px 30px;
+.tab-buttons tab {
+    /* margin-top: 20px; */
+    padding: 15px 35.4px;
     border-style: none;
-    border-radius: 20px;
-    margin-left: 10px;
+    /* border-radius: 10px; */
+    margin-left: -10px;
+    
 }
 .this-is-for-two-all {
     /* margin-left: 632px; */
-    /* margin-top: -119px; */
+    margin-top: 25px;
     /* color: black; */
     /* background-color: aquamarine; */
     width: 500px;
     position: fixed;
     color: #091420;
   background-color:
-  rgb(255, 255, 255);
+  #0f0e41;
+  color: #fff;
   margin-left: 80px;
+  transition: background 0.5s ease;
+  
   /* margin-top: -123px; */
   /* transform: */
       /* perspective(75em) */
@@ -47,4 +53,11 @@
 }
 .the-overall-div-tag-for-persons div {
     display: inline-block;
+    margin-top: 0px;
+}
+.tab-buttons  {
+  background-color: #6e5252;
+  color: black;
+  padding: 14px 10px;
+  
 }

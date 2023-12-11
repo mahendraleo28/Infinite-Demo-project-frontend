@@ -95,24 +95,24 @@ export default function Person() {
       {/* Tabs for Basic, Education, and Work Details */}
       {tabsVisible && (
       <div className="tab-buttons">
-        <button
+        <tab
           onClick={() => setActiveTab('basic')}
           className={activeTab === 'basic' ? 'active-tab' : ''}
         >
           Basic Details
-        </button>
-        <button
+        </tab>
+        <tab
           onClick={() => setActiveTab('education')}
           className={activeTab === 'education' ? 'active-tab' : ''}
         >
           Education Details
-        </button>
-        <button
+        </tab>
+        <tab
           onClick={() => setActiveTab('work')}
           className={activeTab === 'work' ? 'active-tab' : ''}
         >
           Work Details
-        </button>
+        </tab>
       </div>
       )}
       <div className='all-the-texts-names'>
