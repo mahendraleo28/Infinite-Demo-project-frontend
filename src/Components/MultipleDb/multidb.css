@@ -1,0 +1,12 @@
+.container-for-remainnng-space-in-multidb {
+    margin-top: 100px;
+    color: black;
+    margin-bottom: 100px;
+}
+.div-tag-for-all-tables-in-multidb {
+    display: flex;
+    margin-left: -100px;
+}
+.div-tag-for-all-tables-in-multidb table {
+    margin-left: 100px;
+}

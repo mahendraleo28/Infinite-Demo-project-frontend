@@ -183,6 +183,7 @@ body
 }
 .hometagforhamburger{
     position: fixed;
+    overflow-y: scroll;
 }
 .navigationbarbutton {
   background-color: rgb(15, 14, 65);
@@ -195,4 +196,11 @@ body
 }
 .navigation {
   display: flex;
+}
+.ulmenu-inhamburger-page-to-scroll {
+  overflow-y: scroll;
+}
+.ulmenu-inhamburger-page-to-scroll h3 {
+  text-align: left;
+  margin-left: 30px;
 }

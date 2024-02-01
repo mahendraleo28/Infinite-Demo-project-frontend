@@ -20,6 +20,7 @@ import UploadEmployeeData from '../Components/Employee/employee';
 import Filtertask from '../Components/task1/Filtertask';
 import Person from '../Components/Person/Person';
 import Maps from '../Components/maps/Maps';
+import Multipledb from '../Components/MultipleDb/Multipledb';
 
 
 export const AppRoutes = () => {
@@ -49,6 +50,7 @@ export const AppRoutes = () => {
         <Route path="/Filter-details" element={<Filtertask/>}/>
         <Route path="/persons" element={<Person/>}/>
         <Route path="/map" element={<Maps/>}/>
+        <Route path='/multipledatabase' element={<Multipledb/>} />
       </Routes>
     </div>
   );

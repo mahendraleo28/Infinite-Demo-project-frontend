@@ -10,7 +10,7 @@ export default function Hamburger() {
                     <span></span>
                     <span></span>
                     <span></span>
-                    <ul id="menu">
+                    <ul id="menu" className="ulmenu-inhamburger-page-to-scroll">
                         <Link to="/users"><h3>Home</h3></Link>
                         <Link to="/profile-users"><h3>All users</h3></Link>
                         <Link to="/all-users"><h3>All</h3></Link>
@@ -26,7 +26,14 @@ export default function Hamburger() {
                         <Link to="/Filter-details"><h3>Filtered Data</h3></Link>
                         <Link to="/persons"><h3>Person Details</h3></Link>
                         <Link to="/map"><h3>Map</h3></Link>
+                        <Link to="/multipledatabase"><h3>Multiple DataBase Data</h3></Link>
                         {/* <Link to="/addressdropdown"><h3>Addressdropwon</h3></Link> */}
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
                     </ul>
                     
                 </div>
