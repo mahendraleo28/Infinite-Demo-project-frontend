@@ -4,9 +4,17 @@
     margin-bottom: 100px;
 }
 .div-tag-for-all-tables-in-multidb {
-    display: flex;
-    margin-left: -100px;
+    /* margin-left: 100px; */
+    display: flex; 
 }
 .div-tag-for-all-tables-in-multidb table {
-    margin-left: 100px;
+    margin-left: 0px; 
+    margin-bottom: 50px;
+}
+.header-tag-fordb-dat {
+    color: black;
+    /* margin-left: -150px; */
+}
+.div-tag-for-all-tables-in-multidb div{
+    margin-left: 50px;
 }

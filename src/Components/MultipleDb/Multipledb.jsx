@@ -67,6 +67,8 @@ function Multipledb() {
       <div className="container">
         <h3 className="container-for-remainnng-space-in-multidb">Data From The Multiple DataBase</h3>
         <div className='div-tag-for-all-tables-in-multidb'>
+          <div>
+          <h3 className='header-tag-fordb-dat'>Db1 details</h3>
         <table>
           <thead>
             <tr>
@@ -83,6 +85,9 @@ function Multipledb() {
             ))}
           </tbody>
         </table>
+        </div>
+        <div>
+        <h3 className='header-tag-fordb-dat'>Db2 details</h3>
         <table>
           <thead>
             <tr>
@@ -99,6 +104,9 @@ function Multipledb() {
             ))}
           </tbody>
         </table>
+        </div>
+        <div>
+        <h3 className='header-tag-fordb-dat'>Db3 details</h3>
         <table>
           <thead>
             <tr>
@@ -115,6 +123,7 @@ function Multipledb() {
             ))}
           </tbody>
         </table>
+        </div>
         </div>
       </div>
     </div>
