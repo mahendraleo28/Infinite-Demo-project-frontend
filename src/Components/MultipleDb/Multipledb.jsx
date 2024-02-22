@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Hamburger from "../Hamburger/Hamburger";
 import "./multidb.css";
 
@@ -10,7 +10,7 @@ function Multipledb() {
   const [formData1, setFormData1] = useState({ id: '', name: '' });
   const [formData2, setFormData2] = useState({ id: '', name: '' });
 
-  useEffect(() => {
+  // useEffect(() => {
     const fetchDb1Data = async () => {
       try {
         const response = await fetch('http://localhost:7979/db1/all');
@@ -54,7 +54,7 @@ function Multipledb() {
         console.error('Error fetching db3 data:', error);
       }
     };
-
+    useEffect(() => {
     fetchDb1Data();
     fetchDb2Data();
     fetchDb3Data();
@@ -76,10 +76,12 @@ function Multipledb() {
         body: JSON.stringify(formData)
       });
       if (response.ok) {
+        fetchDb1Data();
         alert("sent data successfull");
-        setFormData('');
+        setFormData({ id: '', name: '' });
 
       }
+      
 
       if (!response.ok) {
         throw new Error('Network response was not ok');
@@ -106,8 +108,9 @@ function Multipledb() {
         body: JSON.stringify(formData1)
       });
       if (response.ok) {
+        fetchDb2Data();
         alert("sent data successfull");
-        setFormData1('');
+        setFormData1({ id: '', name: '' });
 
       }
 
@@ -136,9 +139,9 @@ function Multipledb() {
         body: JSON.stringify(formData2)
       });
       if (response.ok) {
+        fetchDb3Data();
         alert("sent data successfull");
-        setFormData2('');
-
+        setFormData2({ id: '', name: '' })
       }
 
       if (!response.ok) {
@@ -158,20 +161,20 @@ function Multipledb() {
         <h3 className="container-for-remainnng-space-in-multidb">Sending Data to Multiple DataBase</h3>
         <form onSubmit={handleSubmit}>
           <span className='span-tag-in-multidb'>Database 1 :</span>
-          <input className='for-input-tags-in-multidb' type="text" name="id" placeholder="Enter ID" value={formData.id} onChange={(e) => handleChange(e, setFormData)} />
-          <input className='for-input-tags-in-multidb' type="text" name="name" placeholder="Enter Name" value={formData.name} onChange={(e) => handleChange(e, setFormData)} />
+          <input className='for-input-tags-in-multidb' type="text" name="id" placeholder="Enter ID" value={formData.id} onChange={(e) => handleChange(e, setFormData)}  required/>
+          <input className='for-input-tags-in-multidb' type="text" name="name" placeholder="Enter Name" value={formData.name} onChange={(e) => handleChange(e, setFormData)} required/>
           <button className='button-tag-in-multidb-page' type="submit">Save</button>
         </form>
         <form className='form-tag-in-multidb' onSubmit={handleSubmit1}>
           <span className='span-tag-in-multidb'>Database 2 :</span>
-          <input className='for-input-tags-in-multidb' type="text" name="id" placeholder="Enter ID" value={formData1.id} onChange={(e) => handleChange1(e, setFormData1)} />
-          <input className='for-input-tags-in-multidb' type="text" name="name" placeholder="Enter Name" value={formData1.name} onChange={(e) => handleChange1(e, setFormData1)} />
+          <input className='for-input-tags-in-multidb' type="text" name="id" placeholder="Enter ID" value={formData1.id} onChange={(e) => handleChange1(e, setFormData1)} required/>
+          <input className='for-input-tags-in-multidb' type="text" name="name" placeholder="Enter Name" value={formData1.name} onChange={(e) => handleChange1(e, setFormData1)} required />
           <button className='button-tag-in-multidb-page' type="submit">Save</button>
         </form>
         <form className='form-tag-in-multidb' onSubmit={handleSubmit2}>
           <span className='span-tag-in-multidb'>Database 3 :</span>
-          <input className='for-input-tags-in-multidb' type="text" name="id" placeholder="Enter ID" value={formData2.id} onChange={(e) => handleChange2(e, setFormData2)} />
-          <input className='for-input-tags-in-multidb' type="text" name="name" placeholder="Enter Name" value={formData2.name} onChange={(e) => handleChange2(e, setFormData2)} />
+          <input className='for-input-tags-in-multidb' type="text" name="id" placeholder="Enter ID" value={formData2.id} onChange={(e) => handleChange2(e, setFormData2)} required />
+          <input className='for-input-tags-in-multidb' type="text" name="name" placeholder="Enter Name" value={formData2.name} onChange={(e) => handleChange2(e, setFormData2)} required />
           <button className='button-tag-in-multidb-page' type="submit">Save</button>
         </form>
         <h3 className="container-for-remainnng-space-in-multib">Data From The Multiple DataBase</h3>
