@@ -1,7 +1,7 @@
 .container-for-remainnng-space-in-multidb {
     margin-top: 100px;
     color: black;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 .div-tag-for-all-tables-in-multidb {
     /* margin-left: 100px; */
@@ -17,4 +17,24 @@
 }
 .div-tag-for-all-tables-in-multidb div{
     margin-left: 50px;
+}
+.container-for-remainnng-space-in-multib {
+    color: black;
+    margin-top: 100px;
+}
+.for-input-tags-in-multidb {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 20px;
+}
+.button-tag-in-multidb-page {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 20px;
+}
+.span-tag-in-multidb {
+    color: black;
+}
+.form-tag-in-multidb {
+    margin-top: 10px;
 }
