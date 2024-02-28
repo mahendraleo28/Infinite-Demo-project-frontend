@@ -3,12 +3,9 @@
     color: black;
     margin-bottom: 50px;
 }
-.div-tag-for-all-tables-in-multidb {
-    /* margin-left: 100px; */
-    display: flex; 
-}
+
 .div-tag-for-all-tables-in-multidb table {
-    margin-left: 0px; 
+    margin-left: 50px; 
     margin-bottom: 50px;
 }
 .header-tag-fordb-dat {
@@ -16,7 +13,7 @@
     /* margin-left: -150px; */
 }
 .div-tag-for-all-tables-in-multidb div{
-    margin-left: 50px;
+    margin-left: 20px;
 }
 .container-for-remainnng-space-in-multib {
     color: black;
@@ -39,4 +36,7 @@
 }
 .form-tag-in-multidb {
     margin-top: 10px;
+}
+form {
+    width: 130%;
 }
